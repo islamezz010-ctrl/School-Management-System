@@ -1,0 +1,29 @@
+[
+  {
+    "id": "usr_admin_1",
+    "name": "Adam Holland",
+    "email": "adam@school.test",
+    "password": "admin123",
+    "role": "admin",
+    "avatar": "A",
+    "subtitle": "admin"
+  },
+  {
+    "id": "usr_teacher_1",
+    "name": "Trevor Lucas",
+    "email": "trevor@school.test",
+    "password": "teacher123",
+    "role": "teacher",
+    "avatar": "T",
+    "subtitle": "physics teacher"
+  },
+  {
+    "id": "usr_student_1",
+    "name": "Stella Lewis",
+    "email": "stella@school.test",
+    "password": "student123",
+    "role": "student",
+    "avatar": "S",
+    "subtitle": "student"
+  }
+]

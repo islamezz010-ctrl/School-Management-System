@@ -1,0 +1,197 @@
+{
+  "calendar": {
+    "month": "September",
+    "year": 2024,
+    "selectedDay": 16,
+    "weeks": [
+      [
+        { "day": 26, "muted": true },
+        { "day": 27, "muted": true },
+        { "day": 28, "muted": true },
+        { "day": 29, "muted": true },
+        { "day": 30, "muted": true },
+        { "day": 31, "muted": true },
+        { "day": 1, "weekend": true }
+      ],
+      [
+        { "day": 2 },
+        { "day": 3 },
+        { "day": 4 },
+        { "day": 5 },
+        { "day": 6 },
+        { "day": 7, "weekend": true },
+        { "day": 8, "weekend": true }
+      ],
+      [
+        { "day": 9 },
+        { "day": 10 },
+        { "day": 11 },
+        { "day": 12 },
+        { "day": 13 },
+        { "day": 14, "weekend": true },
+        { "day": 15, "weekend": true }
+      ],
+      [
+        { "day": 16 },
+        { "day": 17 },
+        { "day": 18 },
+        { "day": 19 },
+        { "day": 20 },
+        { "day": 21, "weekend": true },
+        { "day": 22, "weekend": true }
+      ],
+      [
+        { "day": 23 },
+        { "day": 24 },
+        { "day": 25 },
+        { "day": 26 },
+        { "day": 27 },
+        { "day": 28, "weekend": true },
+        { "day": 29, "weekend": true }
+      ],
+      [
+        { "day": 30 },
+        { "day": 1, "muted": true },
+        { "day": 2, "muted": true },
+        { "day": 3, "muted": true },
+        { "day": 4, "muted": true },
+        { "day": 5, "muted": true },
+        { "day": 6, "muted": true }
+      ]
+    ]
+  },
+  "counts": {
+    "admins": 2,
+    "teachers": 24,
+    "students": 460,
+    "parents": 382,
+    "lessons": 8,
+    "branches": 2,
+    "classes": 4,
+    "attendance": 98
+  },
+  "studentSplit": {
+    "boys": 207,
+    "girls": 253
+  },
+  "attendanceSeries": [
+    { "day": "Mon", "present": 60, "absent": 50 },
+    { "day": "Tue", "present": 70, "absent": 60 },
+    { "day": "Wed", "present": 88, "absent": 74 },
+    { "day": "Thu", "present": 65, "absent": 70 },
+    { "day": "Fri", "present": 60, "absent": 55 }
+  ],
+  "financeSeries": [
+    { "month": "Jan", "income": 1200, "expense": 2400 },
+    { "month": "Feb", "income": 3050, "expense": 1980 },
+    { "month": "Mar", "income": 2050, "expense": 2320 },
+    { "month": "Apr", "income": 2820, "expense": 1980 },
+    { "month": "May", "income": 1900, "expense": 1320 },
+    { "month": "Jun", "income": 3460, "expense": 2520 },
+    { "month": "Jul", "income": 2470, "expense": 2080 },
+    { "month": "Aug", "income": 3180, "expense": 1980 },
+    { "month": "Sep", "income": 2260, "expense": 1420 },
+    { "month": "Oct", "income": 3320, "expense": 1120 },
+    { "month": "Nov", "income": 3140, "expense": 980 }
+  ],
+  "schedule": [
+    { "id": "sch_1", "day": "Mon", "start": "08:00", "end": "08:45", "title": "4A - Physics", "detail": "Room 204", "color": "cyan" },
+    { "id": "sch_2", "day": "Wed", "start": "08:00", "end": "08:45", "title": "1A - Chemistry", "detail": "Lab 2", "color": "cyan" },
+    { "id": "sch_3", "day": "Fri", "start": "08:00", "end": "08:45", "title": "4A - Chemistry", "detail": "Lab 1", "color": "cyan" },
+    { "id": "sch_4", "day": "Mon", "start": "09:00", "end": "09:45", "title": "3B - Physics", "detail": "Room 203", "color": "yellow" },
+    { "id": "sch_5", "day": "Tue", "start": "09:00", "end": "09:45", "title": "2B - Physics", "detail": "Room 201", "color": "cyan" },
+    { "id": "sch_6", "day": "Thu", "start": "09:00", "end": "09:45", "title": "6A - Physics", "detail": "Room 104", "color": "cyan" },
+    { "id": "sch_7", "day": "Fri", "start": "09:00", "end": "09:45", "title": "3B - Physics", "detail": "Room 203", "color": "yellow" },
+    { "id": "sch_8", "day": "Mon", "start": "10:00", "end": "10:45", "title": "2B", "detail": "Study block", "color": "lavender" },
+    { "id": "sch_9", "day": "Tue", "start": "10:00", "end": "10:45", "title": "3A - Physics", "detail": "Room 210", "color": "yellow" },
+    { "id": "sch_10", "day": "Wed", "start": "10:00", "end": "10:45", "title": "2B - Physics", "detail": "Room 201", "color": "yellow" },
+    { "id": "sch_11", "day": "Thu", "start": "10:00", "end": "10:45", "title": "6B - Chemistry", "detail": "Lab 3", "color": "yellow" },
+    { "id": "sch_12", "day": "Mon", "start": "11:00", "end": "11:45", "title": "5A - Physics", "detail": "Room 211", "color": "pink" },
+    { "id": "sch_13", "day": "Tue", "start": "11:00", "end": "11:45", "title": "5B - Physics", "detail": "Room 206", "color": "lavender" },
+    { "id": "sch_14", "day": "Thu", "start": "11:00", "end": "11:45", "title": "5C - Physics", "detail": "Room 209", "color": "lavender" },
+    { "id": "sch_15", "day": "Fri", "start": "11:00", "end": "11:45", "title": "6A - Physics", "detail": "Room 104", "color": "lavender" },
+    { "id": "sch_16", "day": "Mon", "start": "13:00", "end": "13:45", "title": "6C", "detail": "Project lab", "color": "cyan" },
+    { "id": "sch_17", "day": "Wed", "start": "13:00", "end": "13:45", "title": "3C - Chemistry", "detail": "Lab 1", "color": "lavender" },
+    { "id": "sch_18", "day": "Fri", "start": "13:00", "end": "13:45", "title": "6A - Chemistry", "detail": "Lab 2", "color": "pink" },
+    { "id": "sch_19", "day": "Mon", "start": "14:00", "end": "14:45", "title": "2B - Physics", "detail": "Room 203", "color": "yellow" },
+    { "id": "sch_20", "day": "Tue", "start": "14:00", "end": "14:45", "title": "1A - Physics", "detail": "Room 204", "color": "pink" },
+    { "id": "sch_21", "day": "Thu", "start": "14:00", "end": "14:45", "title": "4A - Chemistry", "detail": "Lab 1", "color": "pink" },
+    { "id": "sch_22", "day": "Fri", "start": "14:00", "end": "14:45", "title": "6B - Chemistry", "detail": "Lab 3", "color": "cyan" }
+  ],
+  "announcements": [
+    { "id": "ann_1", "title": "Picture Day Reminder", "body": "School Picture Day is tomorrow. Do not forget to wear your full uniform and bring your best smile.", "date": "16/09/2024", "color": "cyan" },
+    { "id": "ann_2", "title": "Book Fair Opening", "body": "The annual Book Fair will open this Thursday. Stop by the library to browse the newest books.", "date": "16/09/2024", "color": "lavender" },
+    { "id": "ann_3", "title": "Sports Day Postponed", "body": "Due to weather, Sports Day has been postponed. A new date will be announced soon.", "date": "16/09/2024", "color": "yellow" }
+  ],
+  "events": [
+    { "id": "evt_1", "title": "Book Fair", "body": "Browse and purchase books at our annual school Book Fair.", "time": "08:00 - 10:00", "color": "cyan" },
+    { "id": "evt_2", "title": "Sports Day", "body": "A fun-filled day of athletic events and team competitions.", "time": "10:00 - 12:00", "color": "lavender" },
+    { "id": "evt_3", "title": "Art Exhibition", "body": "Display your artwork for the school community to admire.", "time": "12:00 - 14:00", "color": "yellow" }
+  ],
+  "students": [
+    { "id": "S-1001", "name": "Stella Lewis", "className": "4A", "parent": "Marta Lewis", "phone": "136-367-467", "grade": "A", "status": "Active" },
+    { "id": "S-1002", "name": "Noah Miller", "className": "3B", "parent": "Iris Miller", "phone": "136-367-468", "grade": "B+", "status": "Active" },
+    { "id": "S-1003", "name": "Layla Carter", "className": "5A", "parent": "Hanna Carter", "phone": "136-367-469", "grade": "A-", "status": "Review" },
+    { "id": "S-1004", "name": "Mateo Brooks", "className": "6B", "parent": "Jon Brooks", "phone": "136-367-470", "grade": "B", "status": "Excused" },
+    { "id": "S-1005", "name": "Ava Robinson", "className": "2B", "parent": "Mina Robinson", "phone": "136-367-471", "grade": "A", "status": "Active" }
+  ],
+  "teachers": [
+    { "id": "T-2001", "name": "Trevor Lucas", "subject": "Physics", "classes": 6, "phone": "136-367-467", "status": "Active" },
+    { "id": "T-2002", "name": "Daniel Adams", "subject": "Chemistry", "classes": 5, "phone": "136-367-468", "status": "Active" },
+    { "id": "T-2003", "name": "Amelia Reed", "subject": "Mathematics", "classes": 4, "phone": "136-367-469", "status": "Away" },
+    { "id": "T-2004", "name": "Olivia Stone", "subject": "English", "classes": 7, "phone": "136-367-470", "status": "Active" }
+  ],
+  "parents": [
+    { "id": "P-2101", "name": "Marta Lewis", "student": "Stella Lewis", "relation": "Mother", "phone": "136-367-467", "email": "marta@example.com" },
+    { "id": "P-2102", "name": "Iris Miller", "student": "Noah Miller", "relation": "Mother", "phone": "136-367-468", "email": "iris@example.com" },
+    { "id": "P-2103", "name": "Jon Brooks", "student": "Mateo Brooks", "relation": "Father", "phone": "136-367-470", "email": "jon@example.com" },
+    { "id": "P-2104", "name": "Mina Robinson", "student": "Ava Robinson", "relation": "Guardian", "phone": "136-367-471", "email": "mina@example.com" }
+  ],
+  "subjects": [
+    { "id": "SUB-01", "name": "Physics", "lead": "Trevor Lucas", "classes": 6, "weeklyHours": 18 },
+    { "id": "SUB-02", "name": "Chemistry", "lead": "Daniel Adams", "classes": 5, "weeklyHours": 15 },
+    { "id": "SUB-03", "name": "Mathematics", "lead": "Amelia Reed", "classes": 7, "weeklyHours": 21 },
+    { "id": "SUB-04", "name": "English", "lead": "Olivia Stone", "classes": 6, "weeklyHours": 18 }
+  ],
+  "classes": [
+    { "id": "C-401", "name": "4A", "homeroom": "Trevor Lucas", "room": "204", "students": 28 },
+    { "id": "C-302", "name": "3B", "homeroom": "Daniel Adams", "room": "203", "students": 31 },
+    { "id": "C-506", "name": "5A", "homeroom": "Olivia Stone", "room": "211", "students": 27 },
+    { "id": "C-611", "name": "6B", "homeroom": "Amelia Reed", "room": "Lab 3", "students": 30 }
+  ],
+  "lessons": [
+    { "id": "L-3001", "subject": "Physics", "className": "4A", "teacher": "Trevor Lucas", "room": "204", "weekday": "Monday" },
+    { "id": "L-3002", "subject": "Chemistry", "className": "1A", "teacher": "Daniel Adams", "room": "Lab 2", "weekday": "Wednesday" },
+    { "id": "L-3003", "subject": "Physics", "className": "6A", "teacher": "Trevor Lucas", "room": "104", "weekday": "Thursday" },
+    { "id": "L-3004", "subject": "Chemistry", "className": "6B", "teacher": "Daniel Adams", "room": "Lab 3", "weekday": "Friday" }
+  ],
+  "assignments": [
+    { "id": "A-4001", "title": "Motion worksheet", "subject": "Physics", "due": "18 Sep", "status": "Open" },
+    { "id": "A-4002", "title": "Lab safety reflection", "subject": "Chemistry", "due": "19 Sep", "status": "Submitted" },
+    { "id": "A-4003", "title": "Electricity quiz prep", "subject": "Physics", "due": "23 Sep", "status": "Open" },
+    { "id": "A-4004", "title": "Molecules diagram", "subject": "Chemistry", "due": "25 Sep", "status": "Graded" }
+  ],
+  "exams": [
+    { "id": "E-5001", "subject": "Physics", "date": "24 Sep", "className": "4A", "status": "Scheduled" },
+    { "id": "E-5002", "subject": "Chemistry", "date": "26 Sep", "className": "6B", "status": "Published" },
+    { "id": "E-5003", "subject": "Mathematics", "date": "30 Sep", "className": "3B", "status": "Graded" }
+  ],
+  "results": [
+    { "id": "R-6001", "student": "Stella Lewis", "subject": "Physics", "score": 94, "grade": "A", "term": "1st Semester" },
+    { "id": "R-6002", "student": "Noah Miller", "subject": "Chemistry", "score": 87, "grade": "B+", "term": "1st Semester" },
+    { "id": "R-6003", "student": "Layla Carter", "subject": "Mathematics", "score": 91, "grade": "A-", "term": "1st Semester" },
+    { "id": "R-6004", "student": "Mateo Brooks", "subject": "English", "score": 82, "grade": "B", "term": "1st Semester" }
+  ],
+  "attendanceRecords": [
+    { "id": "ATT-01", "name": "Stella Lewis", "className": "4A", "present": 42, "absent": 1, "rate": "98%" },
+    { "id": "ATT-02", "name": "Noah Miller", "className": "3B", "present": 39, "absent": 4, "rate": "91%" },
+    { "id": "ATT-03", "name": "Layla Carter", "className": "5A", "present": 41, "absent": 2, "rate": "95%" },
+    { "id": "ATT-04", "name": "Mateo Brooks", "className": "6B", "present": 37, "absent": 6, "rate": "86%" }
+  ],
+  "messages": [
+    { "id": "MSG-01", "from": "Principal Office", "topic": "Monthly assembly plan", "date": "16 Sep", "status": "Unread" },
+    { "id": "MSG-02", "from": "Library Team", "topic": "Book fair volunteers", "date": "16 Sep", "status": "Read" },
+    { "id": "MSG-03", "from": "Sports Committee", "topic": "Updated sports day schedule", "date": "17 Sep", "status": "Unread" },
+    { "id": "MSG-04", "from": "Finance Office", "topic": "Term fee reminder", "date": "18 Sep", "status": "Archived" }
+  ]
+}

@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 20% 98%;
+  --foreground: 224 22% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 22% 12%;
+  --primary: 245 65% 70%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 194 82% 89%;
+  --secondary-foreground: 224 22% 12%;
+  --muted: 220 22% 95%;
+  --muted-foreground: 225 9% 46%;
+  --accent: 48 95% 75%;
+  --accent-foreground: 224 22% 12%;
+  --destructive: 0 74% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 17% 90%;
+  --input: 220 17% 90%;
+  --ring: 245 65% 70%;
+}
+
+.dark {
+  --background: 224 28% 8%;
+  --foreground: 210 30% 96%;
+  --card: 224 24% 12%;
+  --card-foreground: 210 30% 96%;
+  --primary: 245 70% 74%;
+  --primary-foreground: 224 28% 8%;
+  --secondary: 196 50% 22%;
+  --secondary-foreground: 210 30% 96%;
+  --muted: 224 18% 18%;
+  --muted-foreground: 215 18% 68%;
+  --accent: 48 74% 55%;
+  --accent-foreground: 224 28% 8%;
+  --destructive: 0 72% 58%;
+  --destructive-foreground: 210 30% 96%;
+  --border: 224 18% 20%;
+  --input: 224 18% 20%;
+  --ring: 245 70% 74%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8dee9;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+.schedule-row {
+  min-height: 82px;
+}
+
+.schedule-card {
+  min-height: 62px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 16px;
+}
+
+@media (max-width: 1180px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .schedule-row {
+    grid-template-columns: 64px repeat(5, minmax(126px, 1fr));
+  }
+}
