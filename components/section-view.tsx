@@ -8,10 +8,13 @@ import {
   MessageCircle,
   Settings,
   TableProperties,
-  UserRound
+  UserRound,
+  Wallet
 } from "lucide-react";
 import { AnnouncementsList, EventsList, ProfileCard } from "@/components/widgets";
 import { RecordTable, type RecordRow } from "@/components/record-table";
+import { AssignmentSubmit } from "@/components/assignment-submit";
+import { TuitionFeesView } from "@/components/tuition-fees-view";
 import { InteractiveCalendar } from "@/components/interactive-calendar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Role, SafeUser, SchoolData } from "@/lib/types";
@@ -30,6 +33,7 @@ const sectionTitles: Record<string, { title: string; icon: React.ReactNode }> = 
   events: { title: "Events", icon: <CalendarDays className="size-5" /> },
   messages: { title: "Messages", icon: <MessageCircle className="size-5" /> },
   announcements: { title: "Announcements", icon: <Bell className="size-5" /> },
+  "tuition-fees": { title: "Tuition Fees", icon: <Wallet className="size-5" /> },
   profile: { title: "Profile", icon: <UserRound className="size-5" /> },
   settings: { title: "Settings", icon: <Settings className="size-5" /> }
 };
@@ -91,7 +95,7 @@ export function SectionView({
     const rows: RecordRow[] = [
       { setting: "Academic Year", value: "2024/25", status: "Active" },
       { setting: "Notifications", value: "Email and dashboard", status: "Active" },
-      { setting: "Theme", value: "Light or dark", status: "Active" },
+      { setting: "Theme", value: "Shadcn dark mode", status: "Active" },
       { setting: "Data Source", value: "Local JSON files", status: "Read" }
     ];
 
@@ -132,6 +136,39 @@ export function SectionView({
   }
 
   const rows = recordsFor(section, data, role);
+
+  if (section === "assignments") {
+    return (
+      <div className="space-y-4">
+        <PageTitle title={meta.title} icon={meta.icon} />
+        <Card className="border-0">
+          <CardHeader>
+            <CardTitle>{meta.title} Directory</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <AssignmentSubmit />
+            <RecordTable rows={rows} searchPlaceholder={`Search ${meta.title.toLowerCase()}...`} />
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  if (section === "tuition-fees") {
+    return (
+      <div className="space-y-4">
+        <PageTitle title={meta.title} icon={meta.icon} />
+        <Card className="border-0">
+          <CardHeader>
+            <CardTitle>Fee Summary</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <TuitionFeesView fees={data.tuitionFees} />
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-4">

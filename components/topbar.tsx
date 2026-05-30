@@ -42,7 +42,7 @@ export function Topbar({ user }: { user: SafeUser }) {
         </Button>
         <Button variant="ghost" size="icon" className="relative" aria-label="Notifications">
           <Bell />
-          <span className="absolute right-1.5 top-1.5 grid h-5 min-w-5 place-items-center rounded-full bg-primary px-1 text-[10px] font-bold text-white">
+          <span className="absolute right-1.5 top-1.5 grid h-5 min-w-5 place-items-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground">
             {user.role === "teacher" ? 3 : 1}
           </span>
         </Button>

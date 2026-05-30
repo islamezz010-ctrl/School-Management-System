@@ -3,6 +3,7 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { MoreHorizontal } from "lucide-react";
 import { DataTable } from "@/components/data-table";
+import { AssignmentSubmit } from "@/components/assignment-submit";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -168,7 +169,8 @@ export function WorkTables({
             <TabsTrigger value="exams">Exams</TabsTrigger>
             {lessons ? <TabsTrigger value="lessons">Lessons</TabsTrigger> : null}
           </TabsList>
-          <TabsContent value="assignments">
+          <TabsContent value="assignments" className="space-y-4">
+            <AssignmentSubmit />
             <DataTable
               columns={assignmentColumns}
               data={assignments}

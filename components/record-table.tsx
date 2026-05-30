@@ -15,11 +15,11 @@ function titleize(value: string) {
 }
 
 function badgeVariant(value: string): BadgeTone {
-  if (["Active", "Submitted", "Published", "Unread"].includes(value)) {
+  if (["Active", "Submitted", "Published", "Unread", "Paid"].includes(value)) {
     return "cyan";
   }
 
-  if (["Open", "Scheduled", "Review"].includes(value)) {
+  if (["Open", "Scheduled", "Review", "Pending"].includes(value)) {
     return "yellow";
   }
 
@@ -27,7 +27,7 @@ function badgeVariant(value: string): BadgeTone {
     return "lavender";
   }
 
-  if (["Away"].includes(value)) {
+  if (["Away", "Overdue"].includes(value)) {
     return "pink";
   }
 

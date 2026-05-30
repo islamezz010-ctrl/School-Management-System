@@ -38,15 +38,27 @@ const config: Config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
-        }
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))"
+        },
+        chart: {
+          "1": "hsl(var(--chart-1))",
+          "2": "hsl(var(--chart-2))",
+          "3": "hsl(var(--chart-3))",
+          "4": "hsl(var(--chart-4))",
+          "5": "hsl(var(--chart-5))"
+        },
+        "table-stripe": "hsl(var(--table-stripe))"
       },
       borderRadius: {
-        lg: "8px",
-        md: "6px",
-        sm: "4px"
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)"
       },
       boxShadow: {
-        soft: "0 16px 45px rgba(15, 23, 42, 0.06)"
+        soft: "0 16px 45px hsl(var(--foreground) / 0.06)"
       }
     }
   },

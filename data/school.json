@@ -193,5 +193,12 @@
     { "id": "MSG-02", "from": "Library Team", "topic": "Book fair volunteers", "date": "16 Sep", "status": "Read" },
     { "id": "MSG-03", "from": "Sports Committee", "topic": "Updated sports day schedule", "date": "17 Sep", "status": "Unread" },
     { "id": "MSG-04", "from": "Finance Office", "topic": "Term fee reminder", "date": "18 Sep", "status": "Archived" }
+  ],
+  "tuitionFees": [
+    { "id": "TF-01", "term": "Fall 2024", "description": "Tuition — 1st installment", "amount": 1250, "dueDate": "15 Sep 2024", "status": "Paid" },
+    { "id": "TF-02", "term": "Fall 2024", "description": "Tuition — 2nd installment", "amount": 1250, "dueDate": "15 Nov 2024", "status": "Pending" },
+    { "id": "TF-03", "term": "Fall 2024", "description": "Lab & materials fee", "amount": 180, "dueDate": "01 Oct 2024", "status": "Paid" },
+    { "id": "TF-04", "term": "Fall 2024", "description": "Sports & activities fee", "amount": 95, "dueDate": "20 Sep 2024", "status": "Overdue" },
+    { "id": "TF-05", "term": "Spring 2025", "description": "Tuition — 1st installment", "amount": 1250, "dueDate": "15 Jan 2025", "status": "Pending" }
   ]
 }

@@ -49,6 +49,7 @@ const allowedSections: Record<Role, string[]> = {
     "events",
     "messages",
     "announcements",
+    "tuition-fees",
     "profile",
     "settings"
   ]

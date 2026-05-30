@@ -17,7 +17,7 @@ import {
   TableProperties,
   Users,
   UserRound,
-  UserRoundCog
+  Wallet
 } from "lucide-react";
 import type { Role } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -36,7 +36,8 @@ const coreItems = [
   { label: "Attendance", slug: "attendance", icon: CalendarDays },
   { label: "Events", slug: "events", icon: CalendarDays },
   { label: "Messages", slug: "messages", icon: MessageCircle },
-  { label: "Announcements", slug: "announcements", icon: Bell }
+  { label: "Announcements", slug: "announcements", icon: Bell },
+  { label: "Tuition Fees", slug: "tuition-fees", icon: Wallet, roles: ["student"] }
 ];
 
 const otherItems = [
@@ -58,9 +59,9 @@ export function AppSidebar({ role }: { role: Role }) {
     <aside className="fixed inset-y-0 left-0 z-30 hidden w-56 border-r bg-card lg:block">
       <div className="flex h-full flex-col">
         <Link href={`/${role}`} className="flex h-16 items-center gap-3 px-5">
-          <span className="relative grid h-9 w-9 place-items-center rounded-lg bg-[#dff7ff]">
-            <span className="absolute -right-1 top-1 h-3 w-3 rounded-full bg-[#ffe575]" />
-            <GraduationCap className="size-5 text-[#23798b]" />
+          <span className="relative grid h-9 w-9 place-items-center rounded-lg bg-secondary">
+            <span className="absolute -right-1 top-1 h-3 w-3 rounded-full bg-accent" />
+            <GraduationCap className="size-5 text-primary" />
           </span>
           <span className="text-sm font-bold">SchoolDash</span>
         </Link>

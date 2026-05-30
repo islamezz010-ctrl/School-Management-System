@@ -133,6 +133,15 @@ export type MessageRecord = {
   status: "Unread" | "Read" | "Archived";
 };
 
+export type TuitionFeeRecord = {
+  id: string;
+  term: string;
+  description: string;
+  amount: number;
+  dueDate: string;
+  status: "Paid" | "Pending" | "Overdue";
+};
+
 export type SchoolData = {
   calendar: {
     month: string;
@@ -170,4 +179,5 @@ export type SchoolData = {
   results: ResultRecord[];
   attendanceRecords: AttendanceRecord[];
   messages: MessageRecord[];
+  tuitionFees: TuitionFeeRecord[];
 };
